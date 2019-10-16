@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Lesson 1 - News Channel</title>
+<style>
+
+html{
+  height:100%;
+}
+body{
+  margin:0px auto;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background: #718e97;
+}
+
+
+header{
+  position: relative;
+  height:200px;
+  z-index: 1;
+}
+header>.title{
+  text-align: left;
+  font-family:Microsoft JhengHei;
+  font-weight:bold;
+  color:white;
+}
+header>.logo{
+  text-align: right;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+}
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 40px 80px;
+  font-size: 30px;
+}
+
+
+main{
+  margin-top:-200px;
+  position: relative;
+  z-index: 0;
+  top:0px;
+  width:100%;
+  height:100%;
+}
+
+footer{
+  position: relative;
+  height:200px;
+  margin-top:-200px;
+  z-index: 1;
+}
+footer>.grid-container {
+  grid-template-columns: 20% 80%;
+  height:100%;
+}
+
+footer>.grid-container > div {
+  /* padding: 20px 0; */
+}
+footer>div>.left-part{
+  text-align: right;
+  background: blueviolet;
+}
+footer>div>.right-part{
+  margin-left: -10px;
+  text-align: left;
+  background: blue;
+}
+
+
+
+</style>
+</head>
+<body>
+<header class="grid-container">
+  <div class="title">
+    <p>資訊部開課瞜</p>
+  </div>
+  <div class="logo"><img src="https://imageog.flaticon.com/icons/png/512/21/21601.png?size=200x100f&pad=100,10,10,10&ext=png&bg=00000000" alt="LOGO"></div>
+</header>
+<main>
+  <iframe width="100%" height="100%" src="http://www.youtube.com/embed/Y4-eDcaF4q4?rel=0&autoplay=1&loop=1&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- https://www.youtube.com/embed/xDWG9SrB4io?controls=0&autoplay=1 -->
+</main>
+<footer>
+  <div class="grid-container">
+    <div class="left-part">1</div>
+    <div class="right-part">2</div>
+  </div>
+</footer>
+</body>
+</html>
