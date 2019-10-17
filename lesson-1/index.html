@@ -25,12 +25,14 @@ header{
   z-index: 1;
 }
 header>.title{
+  padding: 40px 80px;
   text-align: left;
   font-family:Microsoft JhengHei;
   font-weight:bold;
   color:white;
 }
 header>.logo{
+  padding: 40px 80px;
   text-align: right;
 }
 .grid-container {
@@ -42,7 +44,7 @@ header>.logo{
 }
 .grid-container > div {
   /* background-color: rgba(255, 255, 255, 0.8); */
-  padding: 40px 80px;
+  /* padding: 40px 80px; */
   font-size: 30px;
 }
 
@@ -58,8 +60,8 @@ main{
 
 footer{
   position: relative;
-  height:200px;
-  margin-top:-200px;
+  height:160px;
+  margin-top:-160px;
   z-index: 1;
 }
 footer>.grid-container {
@@ -72,12 +74,42 @@ footer>.grid-container > div {
 }
 footer>div>.left-part{
   text-align: right;
-  background: blueviolet;
+  /* background: blueviolet; */
+}
+footer>div>.left-part>div{
+  position: relative;
+  width:100%;
+}
+footer>div>.left-part>#weather{
+  /* background:#006ca5; */
+  background: linear-gradient(90deg, #0072A9 30%, #014983 100%);
+  background: -moz-linear-gradient(90deg, #0072A9 30%, #014983 100%);
+  background: -webkit-linear-gradient(90deg, #0072A9 30%, #014983 100%);
+  background: -o-linear-gradient(90deg, #0072A9 30%, #014983 100%); 
+  /* background-size: cover; */
+  height:120px;
+}
+footer>div>.left-part>#time{
+  margin-top:-40px;
+  background: black;
+  height:45px;
 }
 footer>div>.right-part{
+  margin-top:-48px;
   margin-left: -10px;
   text-align: left;
-  background: blue;
+  /* background: blue; */
+}
+footer>div>.right-part>#content{
+  background: linear-gradient(90deg, #0072A9 30%, #014983 100%);
+  background: -moz-linear-gradient(90deg, #0072A9 30%, #014983 100%);
+  background: -webkit-linear-gradient(90deg, #0072A9 30%, #014983 100%);
+  background: -o-linear-gradient(90deg, #0072A9 30%, #014983 100%); 
+  height:120px;
+  font-size:36px;
+}
+footer>div>.right-part>#marquee{
+  background:darkred;
 }
 
 
@@ -97,8 +129,22 @@ footer>div>.right-part{
 </main>
 <footer>
   <div class="grid-container">
-    <div class="left-part">1</div>
-    <div class="right-part">2</div>
+    <div class="left-part">
+      <div id="weather">
+        <img height="100%" width="auto" src="https://static01.nyt.com/images/2014/05/25/magazine/25wmt/mag-25WMT-t_CA0-master1050.jpg" alt="Weather">
+      </div>
+      <div id="time">
+        <h3>20:00</h3>
+      </div>
+    </div>
+    <div class="right-part">
+      <div id="content">
+        <h1>資訊部 HTML、CSS 第一次課程開始上課了</h1>
+      </div>
+      <div id="marquee">
+        <marquee>資訊部 HTML、CSS 第一次課程開始上課了，下次還會教學CSS</marquee>
+      </div>
+    </div>
   </div>
 </footer>
 </body>
